@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register – Orange Share</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: sans-serif;
+      background: linear-gradient(135deg, #ff0050, #000000, #00f2ea, #ffe600, #ff0000);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    .register-container {
+      max-width: 400px;
+      margin: 60px auto;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #ff0050;
+    }
+    h1 {
+      text-align: center;
+      color: #ffe600;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      color: #fff;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #00f2ea;
+      background-color: #111;
+      color: #fff;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #ff0050;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #ff3366;
+    }
+    .link {
+      text-align: center;
+      margin-top: 15px;
+      color: #00f2ea;
+    }
+    .link a {
+      color: #ffe600;
+    }
+    .channels {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .channels a {
+      display: inline-block;
+      margin: 10px;
+      color: #ff0000;
+      text-decoration: none;
+    }
+    .promotions {
+      margin-top: 20px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="register-container">
+    <h1>Register</h1>
+    <form method="POST" action="/pages/login/register">
+      <label>Email</label>
+      <input type="email" name="email" required>
+
+      <label>Phone</label>
+      <input type="tel" name="phone" required>
+
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <div class="link">
+      Already have an account? <a href="/pages/login/login">Login</a>
+    </div>
+
+    <div class="promotions">
+      <p>Invite new users to complete the registration. When they link WhatsApp for at least 24 hours, you will get the invitation task reward and a 20% rebate on their earnings.</p>
+    </div>
+
+    <div class="channels">
+      <h3>Join Our Channels</h3>
+      <a href="https://t.me/your-telegram-channel" target="_blank">Telegram Channel</a><br>
+      <a href="https://whatsapp.com/channel/0029VbAc8I6HAdNSC6ATCT31" target="_blank">WhatsApp Channel</a>
+    </div>
+  </div>
+</body>
+</html>
